@@ -1,15 +1,23 @@
 # User config
-author: "Pineapple"
-tagline: "Pineapple Certfied Jekyll Theme"
-description: "In 1493, explorer Christopher Columbus found pineapples on Guadeloupe Island in the Caribbean. Pineapple on pizza soon followed..."
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "pineapple@example.com"
-linkedin: "https://www.linkedin.com/"
-twitter: "https://twitter.com/"
-github: "https://github.com/"
+title: blank
+first_name: Manav
+middle_name: 
+last_name: Dixit
+email: dixitmanavu@gmail.com
+author: "Manav Dixit"
+tagline: "Data Scientist | Environmental Activist"
+description: "Hey there! I'm Manav Dixit, a Data Scientist and Machine Learning Engineer. I love working on exciting projects that combine data science and ML to solve global-scale problems."
+keywords: "Data Science, Machine Learning, Environmental Activism"
+linkedin: "https://www.linkedin.com/in/manavdixit/"
+github: "https://github.com/dixitmanav"
+resume: assets/Manav_Dixit_Resume.pdf
+
+keywords: data science, machine learning, environmental activism
+lang: en
+icon: ⚛️
 
 # Site config
-baseurl: "/pineapple"
+baseurl: ""
 highlighter: rouge
 sass:
   sass_dir: assets/scss
