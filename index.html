@@ -18,34 +18,14 @@
 				style="float: right; margin-right: 10px;">
 				<h2 style="font-size: 16px;">About me.</h2>
 				 <p style="font-size: 20px"> 
-					I am a Ph.D. candidate at the Northwestern University <a href="https://robotics.northwestern.edu/">Center for Robotics and Biosystems</a>.
-					I am a researcher in the <a href=https://murpheylab.github.io/>Interactive and Emergent Autonomy Lab</a>, advised by <a href=https://murpheylab.github.io/people/toddmurphey>Dr. Todd Murphey</a>.
+					I am a Data Scientist student, actively pursuing Master's programs after graduating from the <a href="https://datascience.ucsd.edu/">University of California, San Diego </a>.
 					<br><br>
-					My research improves the generalization capabilities of generative models by combining <mark style="background-color: #a9c19198">Bayesian inference</mark> and <mark style="background-color: #a9c19198">deep learning</mark> to explicitly model uncertainty and guide autonomous agents in collecting maximally informative data. 
-					I integrate <mark style="background-color: #a9c19198">perception, machine learning, and actions</mark> in a closed loop system for online, active learning.
-					Applications of my research include active sensing & exploration, robust data collection, and perceptual learning.
+					During my residential education at Tattvagnaan Vidhyapeeth in Mumbai, I felt helpless watching my home state of California burn from the other side of the world. Since then, I have been passionate about leveraging data science and 
+					<mark style="background-color: #a9c19198">data science</mark> and <mark style="background-color: #a9c19198">machine learning</mark> to address <mark style="background-color: #a9c19198">climate change and environmental challenges.</mark>
 				</p>
 				<!-- <p style="font-size:10px;">
 					Robotics x Machine Learning | Computer Vision
 				</p> -->
-			</div>
-		</section>
-		<section class="projects">
-			<div class="container">
-				<h1>Research Papers<br><br></h1>
-				<ul class="projects-list">
-					{% for item in site.categories.research %}
-						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.title }}</h3>
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
 			</div>
 		</section>
 		<section class="projects">
@@ -67,7 +47,7 @@
 			</div>
 		</section>
 
-		<section class="projects">
+		"""<section class="projects">
 			<div class="container">
 				<h1>Class Work<br><br></h1>
 				<ul class="projects-list">
@@ -84,7 +64,7 @@
 					{% endfor %}
 				</ul>
 			</div>
-		</section>
+		</section>"""
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
