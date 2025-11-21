@@ -16,7 +16,7 @@ project:
 ---
 <p class="h3" style="color: #7a995d">TLDR: </p>
 <p>
-Have you ever been baffled that the same size across different brands leads to vastly different fits? This project builds a pipeline that uses a TF-IDF vectorizer based on customer reviews to customize product fit per person. A finall write up is available <a href="/assets/images/projects/clothing_recommender/FinalWriteUp.pdf">here</a>.
+Have you ever been baffled that the same size across different brands leads to vastly different fits? This project builds a pipeline that uses a TF-IDF vectorizer based on customer reviews to customize product fit per person. A final write up is available <a href="/assets/images/projects/clothing_recommender/FinalWriteUp.pdf">here</a>.
 </p>
 
 <p class="h2">Analysis:</p>
