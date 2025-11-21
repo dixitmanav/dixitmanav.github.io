@@ -12,23 +12,17 @@
 	<main class="content">
 		<section class="project">
 			<div class="container">
-				<article>
+				<!-- <article> -->
 					<span class="h2">Project Title</span>
 					<h1>
 						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 					</h1>
-					<span class="h2">Role</span>
+					<br>
+					<!-- <span class="h2">Date Completed:</span>
+					<span style="font-family: $font-poppins;">{{ page.project.date }}</span> -->
 					{{ page.content }}
-					<div class="project-meta">
-						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						<span class="h2">Agency</span>
-						<p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p>
-						<span class="h2">Year</span>
-						<p>{{ page.agency.year }}</p>
-					</div>
-				</article>
-				<aside>
+				<!-- </article> -->
+				<!-- <aside>
 					<ul>
 						{% for image in page.images %}
 						<li>
@@ -36,10 +30,36 @@
 						</li>
 						{% endfor %}
 					</ul>
-				</aside>
+				</aside> -->
 			</div>
 		</section>
+		{% assign project_posts = site.posts | where: "categories", "projects" %}
+		{% for post in project_posts %}
+			{% if post.title == page.title %}
+				{% assign curr_index = forloop.index0 %}
+			{% endif %}
+		{% endfor %}
+		{% assign prev_index = curr_index | minus: 1 %}
+		{% assign next_index = curr_index | plus: 1 %}
+
+
 		<section class="project-navigation">
+			<div class="container">
+				{% for post in project_posts %}
+					{% if forloop.index0  == prev_index %}
+						<a title="Previous {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}" class="prev">
+							<span class="h2">Previous</span>
+							<h2>{{ post.title }}</h2>
+						</a>
+					{% endif %}
+					{% if forloop.index0 == next_index %}
+						<a title="Next {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}" class="next">
+							<span class="h2">Next</span>
+							<h2>{{ post.title }}</h2>
+						</a>
+					{% endif %}
+				{% endfor %}
+		<!-- <section class="project-navigation">
 			<div class="container">
 				{% if page.previous and page.previous.categories contains "projects" %}
 				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
@@ -53,7 +73,7 @@
 					<h2>{{ page.next.project.title }}</h2>
 				</a>
 				{% endif %}
-			</div>
+			</div> -->
 		</section>
 	</main>
 	{% include footer.html %}

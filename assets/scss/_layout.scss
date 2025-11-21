@@ -412,6 +412,20 @@
 	}
 }
 
+.side-by-side-image {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+
+	img {
+		width: 30%;
+		height: auto;
+	}
+}
+
 
 .embed-container {
 	position: relative;
